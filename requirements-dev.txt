@@ -1,5 +1,0 @@
--r requirements.txt
-matplotlib
-seaborn
-mysql-connector-python
-python-dotenv
