@@ -125,18 +125,7 @@ The app only needs `neya_labeled.csv`.
 ## Run the supervised pipeline (no database needed)
 
 ```bash
-pip install -r requirements.txt
 python 02_knn_svm.py        # trains KNN + SVM on neya_labeled.csv, saves plots in images/
-```
-
-## Regenerate the labels from a database (optional)
-
-Only needed if you have your own MySQL database with the same schema (`players_stats`, `matches`, `tournaments`):
-
-```bash
-pip install -r requirements-dev.txt
-cp .env.example .env        # then fill in your MySQL credentials
-python 01_kmeans.py         # produces neya_labeled.csv
 ```
 
 ## Tech stack
@@ -152,7 +141,6 @@ Python · Pandas · NumPy · Scikit-learn · Matplotlib · Seaborn · MySQL · S
 ├── neya_labeled.csv         # Labeled dataset (output of step 1)
 ├── images/
 ├── requirements.txt         # app + supervised pipeline
-├── requirements-dev.txt     # full pipeline incl. MySQL
 ├── .env.example
 └── .gitignore
 ```
