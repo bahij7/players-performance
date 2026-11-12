@@ -103,7 +103,7 @@ print("KNN:", knn.score(X_test, y_test))
 | --- | --- |
 | [![elbow](images/elbow_method.png)](images/elbow_method.png) | [![pca](images/clusters_pca_2d.png)](images/clusters_pca_2d.png) |
 
-| KNN vs SVM | Confusion matrices |
+| KNN vs SVM | Confusion Matrix |
 | --- | --- |
 | [![comparison](images/comparison_knn_svm.png)](images/comparison_knn_svm.png) | [![cm](images/confusion_matrices.png)](images/confusion_matrices.png) |
 
